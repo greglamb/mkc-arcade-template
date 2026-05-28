@@ -5,6 +5,7 @@
         "device": "*"
     },
     "files": [
+        "config.ts",
         "main.ts",
         "README.md",
         "assets.json"

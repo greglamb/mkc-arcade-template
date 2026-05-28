@@ -1,0 +1,18 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"*.blocks": "html",
+			"*.jres": "json"
+		}
+	},
+	"extensions": {
+		"recommendations": [
+			"ms-edu.pxt-vscode-web"
+		]
+	}
+}

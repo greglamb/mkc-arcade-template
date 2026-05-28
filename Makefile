@@ -1,10 +1,15 @@
-all: deploy
+all: build
 
 build:
-	pxt build
+	mkc build -j
 
-deploy:
-	pxt deploy
+clean:
+	mkc clean
 
-test:
-	pxt test
+serve:
+	trap 'sed -i "" "s/export let DEBUG = true/export let DEBUG = false/" config.ts' EXIT INT TERM; \
+	sed -i "" "s/export let DEBUG = false/export let DEBUG = true/" config.ts; \
+	(sleep 2 && open http://127.0.0.1:7001/) & mkc serve
+
+dev-reset:
+	sed -i "" "s/export let DEBUG = true/export let DEBUG = false/" config.ts

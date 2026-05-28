@@ -10,3 +10,11 @@ _site
 *.tgz
 .header.json
 .simstate.json
+.DS_Store
+
+# Playwright smoke/watch artifacts (tests write to /tmp, but node_modules lands here)
+tests/node_modules
+tests/shots
+tests/state-log.json
+tests/playwright-report
+tests/test-results

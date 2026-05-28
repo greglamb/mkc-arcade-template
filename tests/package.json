@@ -1,0 +1,10 @@
+{
+  "name": "mkc-arcade-tests",
+  "private": true,
+  "scripts": {
+    "smoke": "node smoke.js"
+  },
+  "devDependencies": {
+    "playwright": "^1.55.0"
+  }
+}
